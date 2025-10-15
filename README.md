@@ -48,3 +48,6 @@ python main.py --train_dir MNIST/train --test_dir MNIST/test --model_path models
 - 训练集会按 95%/5% 划分训练与验证。
 - 将输出混淆矩阵与 ROC 曲线到指定目录。
 - 程序会输出准确率、AUC 等评估指标。
+
+## 实验报告
+见`reports/report.pdf`。
