@@ -64,13 +64,11 @@ def main() -> None:
 
     print("验证集评估中...")
     y_valid_pred = clf.predict(X_valid)
-    y_valid_proba = clf.predict_proba(X_valid)
-    eval_valid = evaluator.evaluate(y_valid, y_valid_pred, y_valid_proba)
+    eval_valid = evaluator.evaluate(y_valid, y_valid_pred)
 
     print("测试集评估中...")
     y_test_pred = clf.predict(X_test)
-    y_test_proba = clf.predict_proba(X_test)
-    eval_test = evaluator.evaluate(y_test, y_test_pred, y_test_proba)
+    eval_test = evaluator.evaluate(y_test, y_test_pred)
 
     # 5) 保存模型
     print("保存模型中...")

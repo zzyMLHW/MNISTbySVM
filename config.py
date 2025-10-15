@@ -16,5 +16,5 @@ SVM_PARAMS = {
     'C': 1.0,
     'gamma': 'scale',
     'kernel': 'rbf',
-    'probability': True,
+    'probability': False,
 }
