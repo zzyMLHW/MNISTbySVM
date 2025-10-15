@@ -84,16 +84,16 @@ $$K(\boldsymbol{x}_i, \boldsymbol{x}_j) = \exp(-\gamma \|\boldsymbol{x}_i - \bol
 
 ### 3.4. 混淆矩阵
 
-![](confusion_matrix.png)
+<center><img src="confusion_matrix.png" style="zoom: 33%;" /></center>
 
 混淆矩阵直观地验证了模型的高准确性。绝大多数预测值都集中在颜色非常深的主对角线上，这表明模型为每个数字类别都做出了大量的正确预测。与之形成鲜明对比的是，非对角线区域的颜色非常浅，说明模型极少将一个数字错误地分类为另一个，混淆度很低。这张图有力地佐证了模型高达 97.89% 的准确率，证明其具有出色的分类能力。
 
 ### 3.5 ROC曲线
 
-![Per-Class ROC Curves](roc_per_class.png)
+<center><img src="roc_per_class.png" alt="Per-Class ROC Curves" style="zoom: 33%;" /></center>
 *各类别的 ROC 曲线*
 
-![Average ROC Curves](roc_micro_macro.png)
+<center><img src="roc_micro_macro.png" alt="Average ROC Curves" style="zoom: 33%;" /></center>
 *微平均与宏平均 ROC 曲线*
 
 ROC 曲线和高 AUC 值有力地证明了模型是一个高性能且鲁棒的分类器。如图3所示，所有10个类别的 ROC 曲线都非常贴近左上角，量化的 AUC 值也都高于 0.978，这表示模型在区分每一个类别时，都能在保持极高真阳性率的同时，维持极低的假阳性率。此外，如图4所示，微平均和宏平均 ROC 曲线同样紧贴左上角，其 AUC 值（0.9883 和 0.9882）高度一致，表明模型在不同类别上的表现非常均衡，不存在偏袒某个或忽略某个类别的情况。
